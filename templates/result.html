@@ -1,5 +1,12 @@
 {% block content %}
 
+{% if number %}
+    <h1>{{number}} is {% if even %} even {% else%} odd {% endif%}</h1>
 
+{% elif invalid %} <h1>Provided input is not an integer!</h1>
+
+{% else %}
+    <h1>No number provided</h1>
+{% endif %}
 
 {% endblock %}

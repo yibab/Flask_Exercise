@@ -1,8 +1,15 @@
 {% block content %}
 <h1>Student Details</h1>
-<table>
+<table width="100%">
+    <tr>
+        <th>Name</th>
+        <th>Organization</th>
+    </tr>
     {%for key,value in studentOrganisationDetails.items()%}
-
+        <tr>
+            <td>{{ key }}</td>
+            <td>{{ value }}</td>
+        </tr>
     {%endfor%}
 </table>
 

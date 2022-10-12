@@ -2,5 +2,17 @@
 <h1>Register</h1>
 <h4>Enter Student Information below</h4>
 <!--Form to request user's name-->
-
+<form method="POST">
+    <label for="name">Enter Name: </label>
+    <input type="text" name="name">
+    <label for="org">Enter Organization: </label>
+    <select name="org" id="org">
+        <option value="Amazing Stuff">Amazing stuff</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <input type="submit" value="Register">
+</form>
 {% endblock %}
